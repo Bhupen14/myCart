@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header">
+        <span>
+            <p class="c-title">Filters</p>
+            <p class="icon">
+                <a  [ngClass]="{'ef':this.layoutMode === 'grid'}" (click)="setLayout('grid')"><span><i class = "fas fa-th"></i></span></a>
+                <a [ngClass]="{'ef':this.layoutMode === 'list'}" (click)="setLayout('list')"><i class = "fas fa-list"></i></a>
+
+       </span>
+
+    </div>
+    <div class="card-content">
+        <!-- <input type="text" placeholder="search" class="form-control" (keyup)="searchFilter($event)" ngModel id="searchText"> -->
+        <input type="text" placeholder="search" class="form-control" (keyup)="searchFilter()"  #searchText />
+    </div>
+    <div class="card-footer">
+        <button class="btn">Ok</button>
+    </div>
+</div>

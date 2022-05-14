@@ -1,0 +1,30 @@
+<!-- <form> -->
+  <div class="card">
+    <div class="card-header">
+      <p>{{product.name}}
+        <span style="position: relative;float: right;">{{product.price | currency}}</span>
+      </p>
+    </div>
+    <div class="cardcontent">
+      <img [src]="product.imagePath" alt="product.name">
+      <div>{{product.description}}</div>
+    </div>
+
+
+    <div class="card-footer">
+
+      <div style="text-align: center">
+        <button class="btn btn-outline-secondary"  (click)="subQty()">-</button>
+
+        <input type="text" name="o_qty" id="o_qty" [(ngModel)]="o_qty" style="width:40px;display:inline-block;margin-left:10px;"
+          class="form-control" value=1 pattern="\d" required/>
+          <span *ngIf = 'qtyerrMsg' class="errMsg" >Enter Quantity</span>
+        <button type="button" class="btn btn-outline-secondary"  (click)="addQty()">+</button>
+      </div>
+      <div style="text-align: center">
+        <button class="btn btn-outline-primary" [routerLink]="['/productDetail', product.id]">View</button>
+        <button class="btn btn-outline-primary" (click)="addtoCart(product)">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+<!-- </form> -->

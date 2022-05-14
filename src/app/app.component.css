@@ -1,0 +1,48 @@
+.main {
+    padding-top: 15px;
+    background-color: whitesmoke;
+    min-height: calc(100vh - 52px);
+    overflow: hidden;
+    padding-bottom: 15px;
+  }
+  
+  
+.popup
+{
+  position: absolute;
+  float: left;
+ margin-left: 85%;
+ margin-top: -23px;
+ /* border:1px solid green; */
+ width:200px;
+ height:50px;
+ z-index: 1;
+/* background-color: lavender; */
+box-shadow: 2px 2px 2px 2px #cccccc;
+ /* animation: mymove 10s ; */
+}
+
+@keyframes mymove {
+  from {opacity: 100%;}
+  to {opacity:0%;}
+}
+
+.alert{
+  /* position: absolute; */
+  position: fixed;
+  /* float: right; */
+  width:400px;
+  margin-left:71%;
+  margin-top:-23px;
+  box-shadow: 2px 2px 2px 2px #cccccc;
+  z-index: 1;
+  opacity: 100%;
+   animation: fadeout 6s ;
+}
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity:0;}
+}
+p{
+  border-bottom: 1px solid black;
+}

@@ -1,0 +1,36 @@
+.c-title{
+    position: absolute;
+    float: left;
+}
+.icon{
+    position: relative;
+    float: right;
+
+}
+
+.fas{
+    margin:1px;
+}
+
+a
+{
+    /* position:inherit; */
+    width: 24px;
+    /* border:1px solid black; */
+    background-color: white;
+    margin: 2px;
+    cursor: pointer;
+    border-style: outset;
+
+    /* padding: 14px 25px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 2px 2px #cccccc;
+}
+
+.ef{
+    border: none;
+    box-shadow: none;
+    border-style: inset;
+}

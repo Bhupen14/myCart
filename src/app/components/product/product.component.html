@@ -1,0 +1,30 @@
+
+<div class="container-fluid row">
+    <div class="col-sm-3">
+        <app-filter></app-filter>
+    </div>
+
+    <div  class="col-sm-9" >
+        <div *ngIf="displayLayout === 'grid'" class="d-flex flex-wrap">
+            <app-product-column  *ngFor="let product of (allProducts | searchByText: _searchByText)" [product]="product" ></app-product-column>
+        </div>
+        <div *ngIf = "displayLayout === 'list'">
+            <table  class="table table-bordered ">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th >Name / Desc.</th>
+                        <th>Qty</th>
+                        <th>Price </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <app-product-list class="tr" *ngFor="let product of (allProducts | searchByText: _searchByText)" [product]="product" (click)="selectedproduct(product)"></app-product-list> -->
+                    <!-- <app-product-list class="tr" *ngFor="let product of (allProducts | searchByText: _searchByText)" [product]="product" [routerLink]="['/productDetail', product.id]"></app-product-list> -->
+                    <app-product-list class="tr" *ngFor="let product of (allProducts | searchByText: _searchByText)" [product]="product" ></app-product-list>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

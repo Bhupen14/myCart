@@ -1,0 +1,72 @@
+<article>
+  <h1>
+    {{product.name}}
+  </h1>
+  <aside>
+    <h2>
+      {{product.name}}
+    </h2>
+    <p>
+        {{product.description}}
+        <br>
+        <br>
+        {{product.price|currency}}
+        <br>
+        <button class="btn btn-outline-primary" (click)="addToCart()">Add To Cart</button>
+        <button class="btn btn-outline-primary" routerLink="/product">Back to Product</button>
+      </p>
+  </aside>
+  <p>
+      <img [src]="product.imagePath" alt="product.name" >
+  </p>
+</article>
+
+
+<!-- <div class="columns">
+    <div class="column is-two-thirds">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ product ? product?.name : 'loading' }}
+          </p>
+          <span class="card-header-icon">
+            <small>{{ product ? (product.price | currency) : 'loading' }}</small>
+          </span>
+        </header>
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img [src]="product ? product.imagePath : 'http://via.placeholder.com/500x500'" [alt]="product?.name" />
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <a class="button is-light" routerLink="/product">
+        <span class="icon">
+          <i class="fas fa-arrow-left"></i>
+        </span>&nbsp; Back to Products
+      </a>
+  
+      <hr>
+  
+      <a class="button is-success" >
+        <span class="icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>&nbsp; Add to Cart
+      </a>
+  
+      <hr>
+  
+      <div class="card-content">
+        <div class="content">
+  
+          <h2>To add: product image slider and zoom</h2>
+  
+          {{ product ? product.description : 'loading' }}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+   -->

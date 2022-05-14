@@ -1,0 +1,44 @@
+a
+{
+    /* position:inherit; */
+    width: 100px;
+    /* height:30px; */
+    border:1px solid black;
+    background-color: white;
+    margin: 10px;
+    cursor: pointer;
+    /* text-align: center; */
+    /* display: block; */
+    border-style: outset;
+
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 2px 2px #cccccc;
+}
+
+/*   
+  a:hover {
+    border:lawngreen;
+
+    border-style: outset;
+
+  }
+ a:active{
+     border:1px solid white;
+ } */
+
+
+ a:link { color: blue; }          /* Unvisited links */
+a:visited { color: purple; }     /* Visited links */
+a:hover { background: yellow; }  /* Hovered links */
+a:active { background-color: red; }         /* Active links */
+
+p:active { background: #eee; }   /* Active paragraphs */
+
+.ef{
+    border: none;
+    box-shadow: none;
+    border-style: inset;
+}

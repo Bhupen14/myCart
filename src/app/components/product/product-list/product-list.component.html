@@ -1,0 +1,33 @@
+  
+  <td style="width: 100px;"> 
+      
+        {{ product.id }} 
+      
+    </td>
+<td>{{product.name}}</td>
+
+<td style="text-align: right;width:15%">{{this.qty}}
+  <span *ngIf = 'qtyerrMsg' class="errMsg" >Enter Quantity</span>
+
+  <span >
+    <button class="btn btn-outline-primary up" (click)="addQty()">^</button>
+    <button class="btn btn-outline-primary down" (click)="subQty()" >v</button>
+  </span>
+</td>
+<th style="text-align: right;width:15%">{{product.price | currency}}</th>
+
+<div class="buttons has-addons">
+    <a class="button" [routerLink]="['/productDetail', product.id]">
+      <span class="icon is-small">
+        <i class="fas fa-search-plus"></i>
+      </span>
+    </a>
+    <a class="button" >
+      <span class="icon is-small">
+        <i class="fas fa-cart-plus" (click)="addtoCart(product)"> </i>
+      </span>
+    </a>
+  </div>
+
+
+  

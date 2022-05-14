@@ -1,0 +1,73 @@
+
+ {
+     "products": 
+     [
+        {
+        "id":"A0000001",
+        "description":"Soccer dress",
+        "imagePath":"assets/images/1.jpg",
+        "imagePathSm":"assets/images/1--sm.jpg",
+        "name":"Soccer dress",
+        "price":10,
+        "qty":10,
+        "type":"tshirts"
+    },
+    {
+        "id":"A0000002",
+        "description":"Blue t-shirt",
+        "imagePath":"assets/images/2.jpg",
+        "imagePathSm":"assets/images/2--sm.jpg",
+        "name":"Blue t-shirt",
+        "price":12,
+        "qty":1,
+        "type":"tshirts"
+    },
+    {
+        "id":"A0000003",
+        "description":"White Sneakers",
+        "imagePath":"assets/images/shoes1.jpg",
+        "imagePathSm":"assets/images/shoes1--min.jpg",
+        "name":"White Sneakers",
+        "price":55,
+        "qty":1,
+        "type":"shoes"
+    },
+    {
+        "id":"A0000004",
+        "description":"Gray t-shirt",
+        "imagePath":"assets/images/3.jpg",
+        "imagePathSm":"assets/images/3--sm.jpg",
+        "name":"Gray t-shirt",
+        "price":13,
+        "qty":1,
+        "type":"tshirts"
+    },
+    {
+        "id":"A0000005",
+        "description":"Black t-shirt",
+        "imagePath":"assets/images/4.jpg",
+        "imagePathSm":"assets/images/4--sm.jpg",
+        "name":"Black t-shirt",
+        "price":19,
+        "qty":1,
+        "type":"tshirts"
+    },
+    {
+        "id":"A0000006",
+        "description":"Brown Leather Boots",
+        "imagePath":"assets/images/shoes2.jpg",
+        "imagePathSm":"assets/images/shoes2--sm.jpg",
+        "name":"Brown Leather Boots",
+        "price":79,
+        "qty":1,
+        "type":"shoes"
+    }
+    ],
+    "dept":
+    [
+        {
+            "id":"01",
+            "name":"abc"
+        }
+    ]
+}

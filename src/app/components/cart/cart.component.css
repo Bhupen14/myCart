@@ -1,0 +1,24 @@
+.qtybtn
+{
+    position: relative;
+    float: unset;
+    margin: auto;
+    padding: 2px 2px;
+}
+
+.up
+{
+    height:30px;
+    width:50px;
+
+}
+.down
+{
+    height:30px;
+    width:50px;
+
+}
+button{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}

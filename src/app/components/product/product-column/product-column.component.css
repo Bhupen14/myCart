@@ -1,0 +1,39 @@
+.card{
+    width:325px;
+    position: relative;
+    float: left;
+    margin: 5px 5px;
+    box-shadow: 5px 10px #888888;
+    border: 1px solid red;
+}
+.card-header{
+    background-color: linen;
+    color: coral;
+}
+.btn
+{
+    margin-left:10px;
+}
+
+img{
+    width:290px;
+    height:290px;
+}
+
+input:invalid,  input:focus:invalid {
+    border: red solid 3px;
+  }
+
+ 
+.errMsg{
+    position: absolute;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    margin-top: -50px;
+    margin-left:-70px;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+ 
